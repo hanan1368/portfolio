@@ -2,21 +2,11 @@ import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { CheckCircle, ExternalLink, X } from "lucide-react";
 
-import internshipImg from "../assets/internship.jpg";
 import workshopImg from "../assets/workshop.jpg";
 import contributionImg from "../assets/contribution.jpg";
 import concerImg from "../assets/concer.jpg";
 
 const impactCards = [
-  {
-    img: internshipImg,
-    tag: "INTERNSHIP",
-    accent: "#7c3aed",
-    caption:
-      "Mentored an autistic adult learner one-on-one at HashHackCode, Adyar",
-    description:
-      "As part of my internship at HashHackCode, Adyar, I worked directly with an autistic adult learner in a one-to-one mentoring environment. I assisted with technology-based learning activities, adapted explanations to suit individual learning styles, and helped build confidence in digital skills. This experience strengthened my understanding of inclusive education and reinforced the importance of personalized learning approaches.",
-  },
   {
     img: workshopImg,
     tag: "GLOBAL WORKSHOP",
@@ -88,7 +78,8 @@ export default function ImpactSection() {
             </h2>
           </motion.div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6 mb-5 sm:mb-6">
+          {/* Changed sm:grid-cols-3 to sm:grid-cols-2 to fit 2 cards perfectly */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 mb-5 sm:mb-6">
             {impactCards.map((card, i) => (
               <motion.div
                 key={i}
@@ -151,10 +142,10 @@ export default function ImpactSection() {
               style={{ aspectRatio: "16/9" }}
             >
               <img
-  src={concerImg}
-  alt="Contribution at Autism Centre"
-  className="w-full h-full object-cover"
-/>
+                src={concerImg}
+                alt="Contribution at Autism Centre"
+                className="w-full h-full object-cover"
+              />
             </motion.div>
 
             <motion.div

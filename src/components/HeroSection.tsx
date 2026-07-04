@@ -61,7 +61,7 @@ function MiniGeometricArt() {
       ))}
       
       <div className="absolute w-10 h-10 rounded-[10px] flex items-center justify-center" style={{ background: "linear-gradient(135deg, rgba(124,58,237,0.12), rgba(6,214,160,0.08))", border: "1.5px solid rgba(124,58,237,0.2)", animation: "miniPulseSoft 4s ease-in-out infinite", boxShadow: "0 0 20px rgba(124,58,237,0.1)" }}>
-        <span className="font-heading font-black text-xl" style={{ background: "linear-gradient(135deg, #7c3aed, #06d6a0)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent", backgroundClip: "text" }}>H</span>
+        <span className="font-heading font-black text-xl" style={{ background: "linear-gradient(135deg, #7c3aed, #06d6a0)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent", backgroundClip: "text" }}>D</span>
       </div>
       
       {[
@@ -77,8 +77,8 @@ function MiniGeometricArt() {
 }
 
 export default function HeroSection() {
-  const { count: countInternships, ref: refInternships } = useCounter(7);
-  const { count: countStudents, ref: refStudents } = useCounter(50);
+  const { count: countInternships, ref: refInternships } = useCounter(2);
+  const { count: countStudents, ref: refStudents } = useCounter(8.15);
 
   return (
     <section
@@ -142,11 +142,11 @@ export default function HeroSection() {
               </div>
 
               <h2 className="font-heading font-black leading-none mb-4" style={{ fontSize: "clamp(3rem,5vw,4.5rem)", color: "#0f172a" }}>
-                HANAN H
+                DURGA M
               </h2>
 
               <div className="inline-flex px-4 py-2 rounded-full text-sm font-bold mb-8" style={{ background: "rgba(124,58,237,0.07)", border: "1.5px solid rgba(124,58,237,0.18)", color: "#7c3aed" }}>
-                BCA · Women's Christian College · CGPA 8.0
+                BCA · Women's Christian College · 
               </div>
 
               <div className="flex flex-wrap gap-2 mb-6">
@@ -165,7 +165,7 @@ export default function HeroSection() {
 
                 <div ref={refStudents} className="rounded-2xl p-5" style={{ background: "#ffffff", border: "1px solid rgba(6,214,160,0.08)" }}>
                   <div className="text-4xl font-black" style={{ color: "#06d6a0" }}>{countStudents}+</div>
-                  <div className="text-sm text-slate-500 mt-1">Students Mentored</div>
+                  <div className="text-sm text-slate-500 mt-1">CGPA</div>
                 </div>
               </div>
 
@@ -173,7 +173,7 @@ export default function HeroSection() {
               <div className="flex items-end justify-between mt-2">
                 <div className="flex flex-col gap-5">
                   <a
-                    href="/certificates/resume.pdf"
+                    href="https://drive.google.com/file/d/1sXoF315iWQozJx5m67nABGEzmo6sLx5E/view?usp=sharing"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="group flex flex-col items-start gap-1 text-xs font-bold tracking-widest text-slate-800 hover:text-purple-600 transition-colors"
@@ -182,14 +182,7 @@ export default function HeroSection() {
                     VIEW RESUME
                   </a>
 
-                  <a
-                    href="/certificates/resume.pdf"
-                    download="Hanan_H_Resume.pdf"
-                    className="group flex flex-col items-start gap-1 text-xs font-bold tracking-widest text-slate-800 hover:text-purple-600 transition-colors"
-                  >
-                    <Download className="w-5 h-5 text-slate-600 group-hover:text-purple-600 transition-colors" />
-                    DOWNLOAD RESUME
-                  </a>
+            
                 </div>
 
                 <div className="flex-shrink-0 flex justify-center items-center">

@@ -43,7 +43,7 @@ export default function Navbar() {
             href="#hero"
             className="font-heading font-black text-sm tracking-wider whitespace-nowrap gradient-text flex-shrink-0"
           >
-            HANAN H
+            DURGA M
           </a>
 
           {/* Desktop links */}

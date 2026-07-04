@@ -5,7 +5,7 @@ import { BookOpen, ExternalLink, Award } from "lucide-react";
 import coverImg from "../assets/cover.jpg";
 
 const PAPER_URL =
-  "https://drive.google.com/file/d/1dMOg_DhqQwsZOZzDMBRhBZkySguHxrwf/view?usp=sharing";
+  "https://drive.google.com/file/d/1H6av76QWmwo7xlBvQtnkvtDdH712znU2/view?usp=sharing";
 
 export default function ResearchSection() {
   return (
@@ -238,7 +238,7 @@ export default function ResearchSection() {
                 </div>
 
                 <a
-                  href="/certificates/best-paper-award.pdf"
+                  href={PAPER_URL}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 px-6 sm:px-7 py-3 sm:py-3.5 rounded-full font-black text-xs sm:text-sm tracking-wide transition-all duration-300 hover:-translate-y-1"
